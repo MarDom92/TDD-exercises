@@ -3,19 +3,19 @@ package Stack;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Stack {
+public class Stack<T> {
 
-    List<Integer> stack = new ArrayList<>();
+    List<T> stack = new ArrayList<>();
 
     public int size() {
         return stack.size();
     }
 
-    public void add(int i) {
-        stack.add(i);
+    public void add(T t) {
+        stack.add(t);
     }
 
-    public int peek() {
+    public T peek() {
         int head = getHeadPosition();
         return stack.get(head);
     }
